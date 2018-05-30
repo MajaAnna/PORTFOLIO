@@ -1,3 +1,20 @@
+$pink:#ff7373;
+$lightpink:#d3ab82;
+$yellow:#f2c55c;
+
+$darkGreen:#193b30;
+$accentGrey:#20c486;
+$blueGreen:#00a38f;
+
+$darkGray:#abaaa3;
+$mediumGray:#D5D5D5;
+$lightGray:#e9ecd5;
+$black:#161514;
+
 body{
-    background-color:red;
+    background-color:$lightGray;
+    section{
+        height:100vh;
+        width:100vw;
+    }
 }
