@@ -1,0 +1,52 @@
+nav{
+  position:relative;
+}
+
+.hamburger, .home{
+  z-index: 10;
+  text-align:right;
+  position:relative;
+  .icon-menu{
+    padding:.5vw;
+    border-radius:100%;
+    border:1px solid white;
+    position:fixed;
+    top:2vh;
+    right:2vw;
+
+    &:hover{
+      cursor:pointer;
+      transform:scale(1.1);
+    }
+  }
+}
+
+.icon-home{
+  padding:.5vw;
+  border-radius:100%;
+  border:1px solid white;
+  position:fixed;
+  bottom:2vh;
+  right:2vw;
+
+  &:hover{
+    cursor:pointer;
+    transform:scale(1.1);
+  }
+}
+
+.teaser{
+  text-align: center;
+  .icon-down-open-big{
+    padding:.5vw;
+    border-radius:100%;
+    border:1px solid white;
+    position:absolute;
+    bottom:2vh;
+    
+    &:hover{
+      cursor:pointer;
+      transform:scale(1.1);
+    }
+  }
+}

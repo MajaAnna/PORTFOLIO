@@ -12,9 +12,30 @@ $lightGray:#e9ecd5;
 $black:#161514;
 
 body{
+    color:white;
     background-color:$lightGray;
+    font-family: 'Lato', sans-serif;
     section{
         height:100vh;
         width:100vw;
+        position:relative;
     }
+}
+#homeSection{
+    background-color: $pink;
+    text-align: center;
+    .title{
+        padding:35vh 0;
+        h1{
+            font-size:10vw;
+            font-family: 'Lobster', cursive;
+            padding:1vw 0;
+        }
+        p{
+            font-size: 3vw;
+            font-family: 'Raleway', sans-serif;
+            margin-bottom:2vh;
+        }
+    }
+    
 }
