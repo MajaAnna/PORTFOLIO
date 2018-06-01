@@ -13,7 +13,6 @@ nav{
     position:fixed;
     top:2vh;
     right:2vw;
-
     &:hover{
       cursor:pointer;
       transform:scale(1.1);
@@ -21,7 +20,51 @@ nav{
   }
 }
 
-.icon-home{
+.menu{
+  width:100%;
+  text-align:right;
+  z-index: 10;
+  position:fixed;
+  top:2vh;
+  right:2vw;
+  padding-right: 0;
+  margin-right: 0;
+  li{
+    display:inline-block;
+    a{
+      text-decoration: none;
+      color:white;
+      display:inline-block;
+      padding:.5vw;
+      border-radius:5px;
+      border:1px solid white;
+      &:hover{
+        font-weight:bold;
+        padding:.5vw;
+        border-radius:5px;
+        border:2px solid white;
+        cursor:pointer;
+        &:last-of-type{
+          border:none;
+        }
+      }
+    }
+    .icon-cancel{
+      padding:.5vw;
+      border-radius:100%;
+      border:1px solid white;
+      &:hover{
+        cursor:pointer;
+        transform:scale(1.1);
+      }
+    }
+  }
+  
+}
+a{
+  color:white;
+  text-decoration: none;
+  .icon-home{
   padding:.5vw;
   border-radius:100%;
   border:1px solid white;
@@ -33,6 +76,7 @@ nav{
     cursor:pointer;
     transform:scale(1.1);
   }
+}
 }
 
 .teaser{

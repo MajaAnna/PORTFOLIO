@@ -23,8 +23,16 @@
             <div class="hamburger">
                 <i class="icon-menu"></i>
             </div>
+            <ul class="menu">
+                <li><a href="#homeSection">Home</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#whatIDoSection">What I do</a></li>
+                <li><a href="#collageSection">Collage</a></li>
+                <li><a href="#formSection">Form</a></li>
+                <li><i class="icon-cancel"></i></li>
+            </ul>
             <div class="home">
-                    <i class="icon-home"></i>
+                <a href="#homeSection"><i class="icon-home"></i></a>
             </div>
             
         </nav>
@@ -58,12 +66,12 @@
                             <label for="message">Your message
                                 <textarea name="message" placeholder="Please, write your question or comment"></textarea>
                             </label>
-                            <label id="checkboxLabel">
-                                <input type="checkbox" value="checkbox" name="checkbox"/>Do you want to be informed?
+                            <label class="formElement">Do you want to be informed?
+                                <input type="checkbox" value="checkbox" name="checkbox"/>
                                 <span class="checkmark"></span>
                             </label>
-                            <label id="radioLabel">
-                                <input type="radio" value="agreement" name="agreement"/>Agreement
+                            <label class="formElement">Agreement
+                                <input type="radio" value="agreement" name="agreement"/>
                                 <span class="checkmark"></span>
                             </label>
                             <input type="submit" name="submit" value="Send!"/>
