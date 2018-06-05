@@ -1,6 +1,7 @@
 nav{
   position:relative;
   display:flex;
+  
 }
 
 .hamburger, .home{
@@ -30,10 +31,9 @@ nav{
   right:2vw;
   padding-right: 0;
   margin-right: 0;
-  
   flex:wrap;
   li{
-    
+    font-size:.8rem;
     margin:0 0 5px 0;
     display:inline-block;
     a{
@@ -66,7 +66,8 @@ nav{
   }
   
 }
-a{
+a
+{
   color:white;
   text-decoration: none;
 
@@ -81,6 +82,40 @@ a{
   &:hover{
     cursor:pointer;
     transform:scale(1.1);
+    }
   }
 }
+
+.navScrolling{
+  color:$darkGray;
+  cursor:pointer;
+  .icon-home, .icon-menu{
+    color:$darkGray;
+    border-radius: 100%;
+    border:1px solid $darkGray;
+    padding:.5vw;
+  }
+  li{
+    margin:0 0 5px 0;
+    a{
+      color:$darkGray;
+      padding:.5vw;
+      border-radius:5px;
+      border:1px solid $darkGray;
+      &:hover{
+        font-weight:bold;
+        padding:.5vw;
+        border-radius:5px;
+        border:2px solid $darkGray;
+        cursor:pointer;
+      }
+    }
+    .icon-cancel{
+      padding:.5vw;
+      border-radius:100%;
+      border:1px solid darkGray;
+    }
+  }
+  
 }
+

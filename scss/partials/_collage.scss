@@ -3,4 +3,47 @@
     color:$darkGray;
     padding:10vh 12vw;
     margin:0 auto;
+    height:100vh;
+
+    h1{
+        margin-bottom:2rem;
+    }
+
+    .gallery{
+        width:100%;
+        display:flex;
+
+        button{
+            padding:0;
+            width:8%;
+            display:inline-block;
+            color:$darkGray;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border:none;
+            background-color: transparent;
+            cursor:pointer;
+        }
+
+        .pictures{
+            display:inline-block;
+            overflow:hidden;
+
+            ul{
+                list-style: none;
+                position:relative;
+
+                li{
+                    display:inline-block;
+                }
+            }
+        }
+
+    }   
+}
+
+ul{
+    li{
+        background: url(../../images/collage/11111.jpg) cover center;
+    }
 }
