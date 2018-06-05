@@ -2,7 +2,7 @@ $(function(){
     // navigation
     const hamburgerBtn = $('.icon-menu'),
           menu = $('.menu'),
-          cancelBtn = $('.icon-cancel');
+          cancelBtn = $('nav .icon-cancel');
     menu.hide();
 
     hamburgerBtn.on('click', function(){
@@ -22,7 +22,10 @@ $(function(){
           email = $('#formEmail'),
           message = $('textarea'),
           errorMsg = $('.errorMsg'),
-          modal = $('.modal');
+          modal = $('.modal'),
+          modalCancelBtn = $('.modal .icon-cancel');
+
+    modal.hide();
 
     form.on('submit', function(e){
         e.preventDefault();
@@ -56,8 +59,16 @@ $(function(){
             errorMessage('Your message should be longer than 10 letters!')
         }
 
+        // modal
+        modal.fadeIn('slow').delay('slow');
+        modalCancelBtn.on('click', function(){
+            modal.fadeOut('slow');
+        })
+
         if(error=true){
             e.preventDefault();
-        }
+        }       
     })
+
+    
 })

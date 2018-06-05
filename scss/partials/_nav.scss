@@ -1,5 +1,6 @@
 nav{
   position:relative;
+  display:flex;
 }
 
 .hamburger, .home{
@@ -29,7 +30,11 @@ nav{
   right:2vw;
   padding-right: 0;
   margin-right: 0;
+  
+  flex:wrap;
   li{
+    
+    margin:0 0 5px 0;
     display:inline-block;
     a{
       text-decoration: none;
@@ -64,33 +69,18 @@ nav{
 a{
   color:white;
   text-decoration: none;
+
   .icon-home{
-  padding:.5vw;
-  border-radius:100%;
-  border:1px solid white;
-  position:fixed;
-  bottom:2vh;
-  right:2vw;
+    padding:.5vw;
+    border-radius:100%;
+    border:1px solid white;
+    position:fixed;
+    bottom:2vh;
+    right:2vw;
 
   &:hover{
     cursor:pointer;
     transform:scale(1.1);
   }
 }
-}
-
-.teaser{
-  text-align: center;
-  .icon-down-open-big{
-    padding:.5vw;
-    border-radius:100%;
-    border:1px solid white;
-    position:absolute;
-    bottom:2vh;
-    
-    &:hover{
-      cursor:pointer;
-      transform:scale(1.1);
-    }
-  }
 }
