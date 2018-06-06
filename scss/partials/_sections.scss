@@ -71,9 +71,84 @@ body{
     }
 }
 
-#aboutSection{
-    padding:10vh 12vw;
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
 }
+
+#aboutSection{
+    padding:10vh 12vw 10vh 8vw;
+    background-color: $blueGreen;
+    img{
+        border-radius: 10px;
+        margin-bottom:8vw;
+        @media (min-width:600px){
+            width:50%;
+            float: left;
+        }
+    }
+    .descriptionPart{
+        padding-left:1rem;
+        .basicText{
+            padding-bottom: 1.5rem;
+        }
+        h1{
+            font-size:2rem;
+            padding: 0 0 .7rem;
+        }
+        @media (min-width:600px){
+            width:50%;
+            float: left;
+        }
+    }  
+}
+
+.infoAboutMe{
+    float:left;
+    width:50%;
+
+    p:last-child{
+        position:relative;
+    }
+
+    &:first-of-type{
+        padding-right:10px;
+    }
+    .mailToggle{
+        cursor:pointer;
+        top:1.3rem;
+        left:1rem;
+        display:'block';
+        padding:5px;
+        background-color: $lightGray;
+        color:$darkGreen;
+        border-radius: 5px;
+        border:none;
+        position:absolute;
+        clear:both;
+        -webkit-box-shadow: 2px 2px 6px 0px rgba(140,138,140,1);
+-moz-box-shadow: 2px 2px 6px 0px rgba(140,138,140,1);
+box-shadow: 2px 2px 6px 0px rgba(140,138,140,1);
+    }
+    button{
+        width:90%;
+        color:$blueGreen;
+        border:none;
+        background-color: $yellow;
+        font-family: 'Raleway', sans-serif;
+        padding:8px;
+        border-radius: 5px;
+        margin: 1vh 0;
+        &:hover{
+            background-color: $lightpink;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
 
 #whatIDoSection{
     padding:10vh 12vw;

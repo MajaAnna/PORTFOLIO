@@ -132,6 +132,19 @@ $(function(){
         }
     })
 
+    //contact
+    const mailIcon = $('.icon-mail'),
+          mailSpan = $('.mailToggle');
+
+    mailSpan.hide();
+
+    mailIcon.on('mouseenter', function(){
+        mailSpan.show();
+    })
+    mailIcon.on('mouseleave', function(){
+        mailSpan.hide();
+    })
+
     //what i do
     const leftTitles = $('.leftAlign'),
           rightTitles = $('.rightAlign');
