@@ -132,6 +132,24 @@ $(function(){
         }
     })
 
+    //ABOUT ME
+    //additional info
+    const hiddenParagraphs = $('.infoAboutMe p'),
+          hiddenUl = $('.infoAboutMe ul'),
+          btn1 = $('#btn1'),
+          btn2 = $('#btn2');
+
+    hiddenParagraphs.hide();
+    hiddenUl.hide();
+
+    btn1.click(function(){
+        hiddenParagraphs.slideToggle();
+    })
+
+    btn2.click(function(){
+        hiddenUl.slideToggle();
+    })
+
     //contact
     const mailIcon = $('.icon-mail'),
           mailSpan = $('.mailToggle');

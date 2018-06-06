@@ -127,9 +127,9 @@ body{
         border:none;
         position:absolute;
         clear:both;
-        -webkit-box-shadow: 2px 2px 6px 0px rgba(140,138,140,1);
--moz-box-shadow: 2px 2px 6px 0px rgba(140,138,140,1);
-box-shadow: 2px 2px 6px 0px rgba(140,138,140,1);
+        -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+        box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
     }
     button{
         width:90%;
@@ -145,14 +145,20 @@ box-shadow: 2px 2px 6px 0px rgba(140,138,140,1);
             font-weight: bold;
         }
     }
+    li{
+        font-size:.9rem;
+        list-style-type: disc;
+
+        &:hover{
+            cursor:pointer;
+            font-weight:bold;
+        }
+    }
 }
-
-
-
 
 #whatIDoSection{
     padding:10vh 12vw;
-    max-height:100vh;
+    min-height:100vh;
     font-family: 'Raleway', sans-serif;
     padding:5vh 10vw;
     color:$darkGray;
