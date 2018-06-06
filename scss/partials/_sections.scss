@@ -26,6 +26,10 @@ body{
             font-size:1rem;
             font-family: 'Lobster', cursive;
             padding:1vw 0;
+            @media (min-width:600px){
+                font-size:3vw;
+                padding:5vw 0; 
+            }
         }
     }
 }
@@ -85,6 +89,10 @@ body{
     h1{
         font-size:2rem;
         padding: 0 0 .7rem;
+        @media (min-width:600px){
+            font-size:3vw;
+            padding:0 0 5rem; 
+        }
     }
     .imgPortrait{
         width:100%;

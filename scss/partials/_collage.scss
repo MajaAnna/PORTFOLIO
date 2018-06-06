@@ -7,6 +7,12 @@
 
     h1{
         margin-bottom:2rem;
+
+        @media (min-width:600px){
+            font-size:3vw;
+            padding:0 0 5rem; 
+        }
+        
     }
 
     .gallery{
