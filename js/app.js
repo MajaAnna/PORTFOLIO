@@ -70,6 +70,7 @@ $(function(){
         }       
     })
 
+    ////////////////////////////////////////////////////////////////////
     //COLLAGES
     let collageSectionPositionTop=$('#collageSection').position().top;
     let formSectionPositionBottom=$('#formSection').position().top;
@@ -105,12 +106,38 @@ $(function(){
     })
 
     //buttons
-    const nextBtn = $('button .icon-right-open-big')
-    const prevBtn = $('button .icon-left-open-big')
+    const nextBtn = $('#nextPic'),
+          prevBtn = $('#prevPic'),
+          allPics = $('.gallery li'),
+          ul = $('.gallery ul');
+          let index = 0;
 
     prevBtn.on('click', function(){
-        console.log('click')
+        if(index <= 0){
+            index = allPics.length-1;
+            allPics.not(':last-child').fadeOut('slow');
+        } else {
+            index--;
+            $(allPics[index]).fadeIn('slow');
+        }
     })
 
-    
+    nextBtn.on('click', function(){
+        if(index === allPics.length-1){
+            index = 0;
+            allPics.fadeIn('slow');
+        } else {
+            $(allPics[index]).fadeOut('slow');
+            index++;
+        }
+    })
+
+    //what i do
+    const leftTitles = $('.leftAlign'),
+          rightTitles = $('.rightAlign');
+
+    // $(window).scroll(function(){
+        leftTitles.fadeIn(5000)
+        rightTitles.fadeIn(1000)
+    // }
 })
