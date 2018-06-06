@@ -80,26 +80,50 @@ body{
 #aboutSection{
     padding:10vh 12vw 10vh 8vw;
     background-color: $blueGreen;
-    img{
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    h1{
+        font-size:2rem;
+        padding: 0 0 .7rem;
+    }
+    .imgPortrait{
+        width:100%;
+        height:60vh;
         border-radius: 10px;
-        margin-bottom:8vw;
+        border:none;
+        position:relative;
+        -webkit-filter: hue-rotate(90deg);
+        filter: hue-rotate(370deg);
+        margin-bottom:2vh;
+        background: url("../images/13332809_1197071480306022_2921780008909805990_n.jpg") no-repeat center/cover;
         @media (min-width:600px){
             width:50%;
+            height:60vh;
             float: left;
+        }
+
+        &::after{
+            width:100%;
+            height:100%;
+            content:'';
+            display:block;
+            position:absolute;
+            top:0;
+            left:0;
+            background-color: $pink;
+            border-radius:10px;
+            opacity:.5;
+            z-index: 10;
         }
     }
     .descriptionPart{
-        padding-left:1rem;
         .basicText{
-            padding-bottom: 1.5rem;
-        }
-        h1{
-            font-size:2rem;
-            padding: 0 0 .7rem;
+            padding-bottom: 1.5rem;         
         }
         @media (min-width:600px){
             width:50%;
             float: left;
+            padding-left:1rem;
         }
     }  
 }
