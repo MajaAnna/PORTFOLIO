@@ -137,6 +137,10 @@ input[type=submit]{
         }
         p{
             font-size:.7rem;
+            @media (min-width:600px){
+                font-size:1.5vw;
+                padding:5vw 0; 
+            }
         }
     }
 }
@@ -148,5 +152,10 @@ footer{
     padding:2vh 1vh;
     a{
         padding:.5rem;
+    }
+
+    @media (min-width:600px){
+        font-size:1vw;
+        padding:3vw 0; 
     }
 }

@@ -165,10 +165,18 @@ $(function(){
 
     //what i do
     const leftTitles = $('.leftAlign'),
-          rightTitles = $('.rightAlign');
+          rightTitles = $('.rightAlign'),
+          whatIDoSection = $('#whatIDoSection');
+    let whatIDoSectionPosition = whatIDoSection.position().top,
+        newScroll = $(window).scrollTop();
 
-    // $(window).scroll(function(){
-        leftTitles.fadeIn(5000)
-        rightTitles.fadeIn(1000)
-    // }
+        if(newScroll > whatIDoSectionPosition){
+            leftTitles.click(function(){
+                $(this).addClass('animated infinite slideInLeft')
+            })
+
+            rightTitles.scroll(function(){
+                $(this).addClass('animated infinite slideInRight')
+            })
+        }
 })
