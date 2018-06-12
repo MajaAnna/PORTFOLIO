@@ -18,6 +18,7 @@
     .gallery{
         width:100%;
         display:flex;
+        height:100%;
 
         button{
             padding:0;
@@ -40,8 +41,6 @@
             display:inline-block;
             overflow:hidden;
             
-            
-
             ul{
                 list-style: none;
                 position:relative;
