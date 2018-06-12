@@ -94,15 +94,27 @@ $(function(){
     });
 
     //sizing
-    const pictures = $('.pictures');
-    let ulHeight = $('.pictures ul').height();
-    let picturesHeight = ulHeight/7
-    pictures.css('height', picturesHeight)
+    // const pictures = $('.pictures');
+    // let ulHeight = $('.pictures ul').height();
+    // let picturesHeight = ulHeight/7
+    // pictures.css('height', picturesHeight)
+
+    const gallery = $('.gallery');
+    let galleryHeight = gallery.height();
+    let onePictureHeight = galleryHeight/7
+    gallery.css('height', onePictureHeight)
+
+    // $('.gallery').height()
 
     $(window).on('resize', function(){
-        let ulHeight = $('.pictures ul').height();
-        let picturesHeight = ulHeight/7
-        pictures.css('height', picturesHeight)
+        // let ulHeight = $('.pictures ul').height();
+        // let picturesHeight = ulHeight/7
+        // pictures.css('height', picturesHeight)
+
+        const gallery = $('.gallery');
+    let galleryHeight = gallery.height();
+    let onePictureHeight = galleryHeight/7
+    gallery.css('height', onePictureHeight)
     })
 
     //buttons
