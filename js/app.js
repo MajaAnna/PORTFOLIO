@@ -98,7 +98,6 @@ $(function(){
     const pictures = $('.pictures');
     let galleryHeight = gallery.height();
     let onePictureHeight = galleryHeight/7
-    console.log('galleryHeight1: ' + galleryHeight);
     gallery.css('height', onePictureHeight)
 
     $(window).resize(function(){
