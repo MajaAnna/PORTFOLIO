@@ -67,6 +67,8 @@ body{
           border:1px solid white;
           position:absolute;
           bottom:2vh;
+          animation:teaser-pulse 1.5s infinite linear normal;
+          
           &:hover{
             cursor:pointer;
             transform:scale(1.1);

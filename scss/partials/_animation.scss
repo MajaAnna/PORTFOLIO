@@ -1,0 +1,11 @@
+@keyframes teaser-pulse{
+    0%{
+        transform:translateY(0) rotate(0deg);
+    }
+    50%{
+        transform:translateY(-5px) rotate(180deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
