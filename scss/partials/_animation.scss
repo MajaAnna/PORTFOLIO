@@ -1,3 +1,4 @@
+// animation: #home
 @keyframes teaser-pulse{
     0%{
         transform:translateY(0) rotate(0deg);
@@ -7,5 +8,37 @@
     }
     100%{
         transform:rotate(360deg);
+    }
+}
+
+// animation: scrolling
+
+.slideInLeft{
+    animation:slideInLeft 4s .5s linear;
+}
+
+.slideInRight{
+    animation:slideInRight 4s .5s linear;
+}
+
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-5vw);
+        opacity:1;
+    }
+    50%{
+        transform: translateX(55vw);
+        opacity:0;
+    }
+}
+
+@keyframes slideInRight{
+    0%{
+        transform: translateX(5vw);
+        opacity:1;
+    }
+    50%{
+        transform: translateX(-55vw);
+        opacity:0;
     }
 }

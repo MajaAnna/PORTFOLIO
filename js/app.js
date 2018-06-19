@@ -73,10 +73,13 @@ $(function(){
     ////////////////////////////////////////////////////////////////////
     //COLLAGES
     let collageSectionPositionTop=$('#collageSection').position().top;
-    let formSectionPositionBottom=$('#formSection').position().top;
-    const nav = $('nav');
+    // let formSectionPositionBottom=$('#formSection').position().top;
+    let whatIDoSectionPosition = $('#whatIDoSection').position().top;
+    const nav = $('nav'),
+          leftAlign = $('.leftAlign'),
+          rightAlign = $('.rightAlign');
 
-    //nav
+    //nav | what i do section
     $(window).on('scroll', function() {   
         menu.hide();
         hamburgerBtn.show();
@@ -90,6 +93,19 @@ $(function(){
 
         if (scrollTop >= collageSectionPositionTop+100) {
             nav.removeClass('navScrolling');
+        }
+
+        //  what i do
+        if(scrollTop > whatIDoSectionPosition){
+            leftAlign.addClass('slideInLeft');
+            leftAlign.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+                $(this).removeClass('slideInLeft');
+            })
+
+            rightAlign.addClass('slideInRight');
+            rightAlign.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
+                $(this).removeClass('slideInRight');
+            })
         }
     });
 
@@ -166,19 +182,20 @@ $(function(){
     })
 
     //what i do
-    const leftTitles = $('.leftAlign'),
-          rightTitles = $('.rightAlign'),
-          whatIDoSection = $('#whatIDoSection');
-    let whatIDoSectionPosition = whatIDoSection.position().top,
-        newScroll = $(window).scrollTop();
+    // const leftTitles = $('.leftAlign'),
+    //       rightTitles = $('.rightAlign');
+    // let whatIDoSectionPosition = $('#whatIDoSection').position().top,
+    //     newScroll = $(window).scrollTop();
+    //     console.log('new scroll:' + newScroll)
+    //     console.log('whatIDoSectionPosition' + whatIDoSectionPosition)
 
-        if(newScroll > whatIDoSectionPosition){
-            leftTitles.click(function(){
-                $(this).addClass('animated infinite slideInLeft')
-            })
+    //     if(newScroll > whatIDoSectionPosition){
+    //         leftTitles.click(function(){
+    //             $(this).addClass('.slideInLeft')
+    //         })
 
-            rightTitles.scroll(function(){
-                $(this).addClass('animated infinite slideInRight')
-            })
-        }
+    //         rightTitles.scroll(function(){
+    //             $(this).addClass('.slideInRight')
+    //         })
+    //     }
 })
